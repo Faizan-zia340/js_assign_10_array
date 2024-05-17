@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ // 1. a. Declare and  an empty multidimensional array. (Array of arrays)
+let multi_dim_array=[[],[],[]];
+
+// 2. Declare and initialize a multidimensional array representing the following matrix:
+
+
+var arr = [
+    [0, 1, 2, 3], [1, 0, 1, 2],[2, 1, 0, 1]];
+    for(let i = 0 ; i < arr.length ; i++) {
+        document.write(  ` arr[i] </br>`);
+    }
+
+//  3. Write a program to print numeric counting from 1 to 10.
+for(let j = 1 ; j <= 10 ; j++) {
+    document.write(`  ${j} </br>`);
+}
+// // 4.Write a program to print multiplication table of any number using for loop. Table number & length should be taken as an input from user
+var table_no = +prompt("enter table number: ")
+ var table_Lenght = +prompt("enter table lenght: ")
+// var tableNo = 8
+// var tableLenght = 10
+for(let e = 1; e <= table_Lenght ; e++) {
+    document.write(`${table_no} * ${e} = ${table_no * e} </br> `)
+}
+    
+//  5.Write a program to print items of the following array using for loop: fruits = [“apple”, “banana”, “mango”, “orange”, “strawberry”]
+var friuts = ['apple', 'banana', 'mango', 'orange', 'strawberry'];
+ for(let l=0 ; l < friuts.length ; l++) {
+     document.write(`  Element at index ${l} is ${friuts[l]} </br>` )
+ }
+
+//  6. a. Counting:
+document.write(" <h2> Counting: </h2>");
+ for(let m = 1 ; m < 16 ; m++){
+     document.write( `${m}`)
+ }
+//  6.b. Reverse counting: 
+document.write(" <h2> Reverse Counting:</h2> ");
+ for(let n = 10 ; n > 0 ; n--){
+     document.write(`</br> ${n}`)
+ }
+// 6. c. Even:
+document.write("<h2> Even:<\h2> ");
+ for(let o = 0 ; o < 21 ; o++){
+     if(o % 2 == 0) {
+     document.write (`  ${o} </br>` )
+     }
+ }
+
+// // 6. d. Odd:
+document.write("  ODD:</br> ");
+document.write("</br")
+ for(let p = 0 ; p < 21 ; p++){
+     if(p % 2 != 0) {
+     document.write(`</br> ${p}`)
+     }
+ }
+ // 6. e. Series:
+ document.write("  Series: </br> ");
+ document.write("</br")
+ for(let q = 1 ; q < 21 ; q++){
+     if(q % 2 == 0) {
+     document.write(`</br> ${q} + "k"`)
+     }
+ }
+  
+ // 7. You have an array A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”] Write a program to enable “search by user input” in an array. After searching, prompt the user whether the given item is found in the list or not. Example
+ 
+ var A = ['cake', 'apple pie', 'cookie', 'chips', 'patties'];
+ document.write("</br")
+ var userInput = prompt("Welcome to sweet & sweet Bakery, what do you want to order sir/mam ? ");
+
+let found = false; 
+
+for (let r = 0; r < A.length; r++) {
+    if (userInput === A[r]) {
+        document.write(` ${A[r]} is available at index ${r} in our bakery </br>`);
+        found = true;
+        break;
+    }
+}
+
+if (!found) {
+    document.write(`We are sorry, ${userInput} is not available in our bakery`);
+}
+// Question 8
+var values = [24, 53, 78, 91, 12]
+var large_value = 0
+
+document.write(`Array items: `)
+for(s = 0; s < values.length; s++){
+    document.write(` </br> ${values[s]},`)
+}
+large_value = Math.max(...values)
+document.write(`</br> The largest number is ${large_value}`)
+
+// Question 9
+var values = [24, 53, 78, 91, 12]
+var smallest_value = 0
+
+document.write(`Array items:`)
+for(t = 0; t < values.length; t++){
+    document.write(` </br> ${values[t]},`)
+}
+smallest_value = Math.min(...values)
+document.write(`</br> The smallest number is ${smallest_value}`)
+
+// Question 10
+for (let u = 1; u <= 100 ; u++) {
+    if (u % 5 == 0) {
+        document.write(` </br> ${u}`)
+        document.write(",")
+    }
+}
+
+
+</script>
+</body>
+</html>
